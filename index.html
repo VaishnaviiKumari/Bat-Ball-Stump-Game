@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <!-- <img src="cricket.jpg" alt="cricket"> -->
+
+ <!-- ------------------------------------------------------------------------------------------------------------------ -->
+  <button onclick="
+  'you have choosen bat';
+  //This will generate random number between 0 and 3
+  let randomNumber = Math.random()*3;
+  let computerChoice;
+  if(randomNumber > 0 &&  randomNumber <=1){
+    computerChoice ='Bat';
+    //console.log('Computer choice is Bat');
+  }else if(randomNumber > 1 && randomNumber <=2){
+    computerChoice = 'Ball';
+    //console.log('Computer choice is Ball');
+  }else{
+    computerChoice = 'Stump'; 
+    //console.log('Computer choice is Stump');
+  }
+  console.log(`Computer choice is ${computerChoice}`);
+  
+  let result;
+  if(computerChoice === 'Ball'){
+    result = 'User won.';
+  }
+  else if(computerChoice === 'Bat'){
+    result = `it's a tie`;
+  }
+  else if(computerChoice === 'Stump'){
+    result = 'Computer has won.';
+  }
+
+  alert(`you have choosen Bat. Computer choice is ${computerChoice} and ${result}`)
+  ">Bat</button>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+  <button onclick="
+  let userChoice = 'user has choosen Ball';
+  let computer ;
+  let num = Math.random()*3;
+  if(num > 0  && num<=1){
+    computer = 'computer has choosen Bat.'
+  }
+  else if(num > 1  && num <=2){
+    computer = 'Computer has choosen Ball.'
+  }
+  else{
+    computer = 'Computer has choosen stump.'
+  }
+
+
+  let res;
+  if(computer === 'computer has choosen Bat.'){
+    res = 'Computer has won.'
+  }
+  else if(computer === 'Computer has choosen Ball.'){
+    res = 'It is a tie.'
+  }
+  else {
+    res = 'User has won.'
+  }
+
+  alert(`${userChoice} and ${computer} and ${res}` )
+  ">Ball</button>
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+  <button onclick="
+  let user = 'The user has choosen Stump';
+  let comp ;
+  let randomVal = Math.random()*3;
+  if(randomVal >0   &&  randomVal <=1){
+    comp = 'Computer has choosen Bat.';
+  }
+  else if(randomVal >1  &&  randomVal <=2){
+    comp = 'Computer has choosen Ball.';
+  }
+  else{
+    comp = 'Computer has choosen Stump.';
+  }
+  
+  let r;
+  if(comp === 'Computer has choosen Bat.'){
+    r = 'User has won';
+  }
+  else if(comp === 'Computer has choosen Ball.'){
+    r = 'Computer has won';
+  }
+  else{
+    r = 'it is a tie.'
+  }
+
+  alert(`${user} .${comp} and ${r}.`)
+
+  ">Stump</button>
+  
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>
